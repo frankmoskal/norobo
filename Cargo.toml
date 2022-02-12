@@ -1,0 +1,9 @@
+[package]
+name = "norobo"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+log = "^0.4"
+simple_logger = "^2.1"
+tiny_http = "^0.10"
