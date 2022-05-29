@@ -10,6 +10,8 @@ RUN cargo install --path . --verbose
 
 FROM alpine:latest
 
+RUN apk --no-cache add curl
+
 COPY --from=builder /usr/local/cargo/bin/norobo /usr/local/bin/norobo
 
 ENV GID=1000
